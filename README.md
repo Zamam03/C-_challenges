@@ -5,11 +5,8 @@ This repository contains a collection of **C++ challenges** that tackle various 
 ## Table of Contents
 - [Overview](#overview)
 - [Challenges](#challenges)
-- [Structure](#structure)
 - [Usage](#usage)
-- [Example](#example)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
@@ -52,8 +49,8 @@ To work with any of the challenges, simply clone the repository and open the C++
 
 Contributions are welcome! If you have an idea for a new challenge, a bug fix, or an improvement, feel free to fork the repository and submit a pull request. Here's how to contribute:
 
-    1. **Fork the repository**.
-    2. **Create a new branch (git checkout -b feature-branch)**.
+    Fork the repository.
+    Create a new branch (git checkout -b feature-branch).
     Make your changes or add a new challenge.
     Commit your changes (git commit -am 'Add new challenge').
     Push to your forked repository (git push origin feature-branch).
