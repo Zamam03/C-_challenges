@@ -38,67 +38,6 @@ The repository contains multiple C++ challenges, each designed to practice diffe
 
 5. **Data Structures**: Problems involving arrays, linked lists, trees, stacks, queues, heaps, and hashmaps.
 
-Each challenge comes with an explanation of the problem, followed by the C++ solution and some examples.
-Example
-
-Here’s an example of how a typical challenge might be structured:
-Challenge: Find the Largest Palindrome Substring
-
-Problem Description: Given a string, find the longest palindrome substring in the string. A palindrome is a string that reads the same forward and backward.
-
-Solution Code:
-
-#include <iostream>
-#include <string>
-using namespace std;
-
-string longestPalindrome(string s) {
-    int n = s.length();
-    if (n == 0) return "";
-
-    int start = 0, maxLength = 1;
-
-    for (int i = 1; i < n; ++i) {
-        for (int j = i; j < n; ++j) {
-            int left = i, right = j;
-            bool isPalindrome = true;
-
-            // Check if substring is a palindrome
-            while (left < right) {
-                if (s[left] != s[right]) {
-                    isPalindrome = false;
-                    break;
-                }
-                left++;
-                right--;
-            }
-
-            if (isPalindrome && (j - i + 1) > maxLength) {
-                start = i;
-                maxLength = j - i + 1;
-            }
-        }
-    }
-
-    return s.substr(start, maxLength);
-}
-
-int main() {
-    string str = "babad";
-    cout << "Longest Palindrome Substring: " << longestPalindrome(str) << endl;
-    return 0;
-}
-
-Sample Input:
-
-"babad"
-
-Sample Output:
-
-"bab"
-
-Explanation: The longest palindrome substring in "babad" is "bab".
-
 ## Usage
 
 To work with any of the challenges, simply clone the repository and open the C++ files in your preferred editor or IDE.
@@ -109,12 +48,12 @@ To work with any of the challenges, simply clone the repository and open the C++
    git clone https://github.com/yourusername/C++-Challenges.git
    cd C++-Challenges
 
-Contributing
+## Contributing
 
 Contributions are welcome! If you have an idea for a new challenge, a bug fix, or an improvement, feel free to fork the repository and submit a pull request. Here's how to contribute:
 
-    Fork the repository.
-    Create a new branch (git checkout -b feature-branch).
+    1. **Fork the repository**.
+    2. **Create a new branch (git checkout -b feature-branch)**.
     Make your changes or add a new challenge.
     Commit your changes (git commit -am 'Add new challenge').
     Push to your forked repository (git push origin feature-branch).
