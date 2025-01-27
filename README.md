@@ -44,3 +44,21 @@ Each challenge comes with an explanation of the problem, followed by the C++ sol
 
 The repository is organized as follows:
 
+
+Each `.cpp` file contains a single challenge, with the following sections:
+- Problem description
+- Solution code
+- Sample input/output
+- Explanation of the approach
+
+## Usage
+
+To work with any of the challenges, simply clone the repository and open the C++ files in your preferred editor or IDE.
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/C++-Challenges.git
+   cd C++-Challenges
+
+
